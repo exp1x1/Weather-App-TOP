@@ -1,0 +1,64 @@
+:root{
+  --h1-size : 5rem;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  background-image: url(../../assest/img/popat.jpg);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  color: #ffffff;
+  background-color: rgba(243, 234, 244, 0.2);
+  width: max-content;
+  height: max-content;
+}
+
+.weather-box {
+  display: grid;
+  grid-template: repeat(auto) / 1fr 1fr;
+}
+.left {
+
+}
+
+.right {
+
+}
+
+.temp {
+  font-size: var(--h1-size);
+}
+.bottom {
+  grid-column: 1/3;
+  justify-self: flex-end;
+
+  font-size: var(--h1-size);
+}
+
+.feellike-temp {
+}
+
+
+
+.wind-speed {
+}
+
+.descriprion {
+}
+
+.humidity {
+}
+
+.city-name {
+}
