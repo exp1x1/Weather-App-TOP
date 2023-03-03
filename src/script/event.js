@@ -1,5 +1,5 @@
 import { getWeather } from "./getweather";
-import { updateData } from "./DOM";
+import { updateData, playAnim } from "./DOM";
 
 export const addEventListenerToSearch = () => {
   const sumBtn = document.getElementById("sum-btn");
@@ -7,8 +7,11 @@ export const addEventListenerToSearch = () => {
 
   sumBtn.addEventListener("click", () => {
     const location = searchBar.value;
-    getWeather(location).then((obj) => updateData(obj));
+    getWeather(location).then((obj) => {
+      updateData(obj);
+      playAnim();
+    });
   });
-  // for starter display 
+  // for starter display
   getWeather("surat").then((obj) => updateData(obj));
 };

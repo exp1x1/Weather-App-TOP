@@ -13,3 +13,11 @@ export const updateData = (obj) => {
   description.textContent = obj.description;
   cityName.textContent = `${obj.name},${obj.country}`;
 };
+
+export const playAnim = () => {
+  const weatherBox = document.querySelector(".weather-box");
+  weatherBox.classList.add("fadein");
+  setInterval(() => {
+    weatherBox.classList.remove("fadein");
+  }, 2000);
+};
