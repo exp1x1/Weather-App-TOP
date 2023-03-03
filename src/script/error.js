@@ -1,3 +1,3 @@
 export const error = () => {
-  return 'Please Enter Valid City Name!!'
+  return alert('Please Enter Valid City Name!!')
 }
